@@ -39,7 +39,6 @@
     }
 
     input{
-        font-size: 10px;
         padding: 2px;
     }
 
@@ -48,7 +47,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        margin: 5px;
+        margin: 10px;
     }
 
     h3 {
@@ -78,15 +77,15 @@
 </style>
 
 <body>
-    <div class="container">
+    <form class="container" action="">
         <h2 style="margin: 10px;">Form Pemesanan Tiket Pesawat</h2>
         <div class="bungkusan">
             <h3>Informasi Penumpang</h3>
             <div class="row">
-                <p>Nama Lenkap: </p><input type="text" placeholder="Masukan Nama Lengkap" />
+                <p>Nama Lenkap: </p><input required type="text" placeholder="Masukan Nama Lengkap" />
             </div>
             <div class="row">
-                <p>Nomor Identitas (KTP/Paspor): </p><input type="number" placeholder="Masukan Nomor Identitas" />
+                <p>Nomor Identitas (KTP/Paspor): </p><input required type="number" placeholder="Masukan Nomor Identitas" />
             </div>
             <div class="row">
                 <p>Jenis Kelamin: </p>
@@ -96,10 +95,10 @@
                 </select>
             </div>
             <div class="row">
-                <p>Alamat Email:</p><input type="email" placeholder="Masukan Email">
+                <p>Alamat Email:</p><input required type="email" placeholder="Masukan Email">
             </div>
             <div class="row">
-                <p>Nomor Telepon:</p><input type="number" placeholder="Masukan Nomor Telepon">
+                <p>Nomor Telepon:</p><input required type="tel" placeholder="Masukan Nomor Telepon">
             </div>
         </div>
 
@@ -132,13 +131,13 @@
                 </select>
             </div>
             <div class="row">
-                <p>Tanggal Keberangkatan: </p><input type="date">
+                <p>Tanggal Keberangkatan: </p><input required type="date">
             </div>
             <div class="row">
                 <p>Tanggal Kepulangan (opsional):</p><input type="date">
             </div>
             <div class="row">
-                <p>Jumlah Penumpang:</p><input type="number" style="width: 50px;">
+                <p>Jumlah Penumpang:</p><input required type="number" style="width: 50px;">
             </div>
             <div class="row">
                 <p>Kelas Penerbangan:</p>
@@ -155,26 +154,20 @@
             <h3>Metode Pembayaran</h3>
             <h4 style="margin-top: 10px;">Pilih Metode Pembayaran</h4>
             <div class="row">
-                <input type="radio" />
+                <input type="radio"/>
                 <p>Kartu Kredit</p>
             </div>
             <div class="row">
-                <input type="radio" />
+                <input type="radio"/>
                 <p>Transfer Bank</p>
             </div>
             <div class="row">
-                <input type="radio" />
+                <input type="radio"/>
                 <p>E-Wallet (GoPay,OVO,dll)</p>
             </div>
         </div>
-        <button style="margin: 20px;" onclick="pesan()">Pesan Tiket</button>
-    </div>
-
-    <script>
-        function pesan(){
-            alert("Tiket Sudah Dipesan")
-        }
-    </script>
+        <button style="margin: 20px;" type="submit">Pesan Tiket</button>
+    </form>
 </body>
 
 </html>
