@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket Pesawat</title>
+</head>
+
+<style>
+    *,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .garis {
+        width: 97%;
+        padding: 5px;
+        border-radius: 3px;
+        margin: 15px;
+        border: 1px solid #000000;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+
+    }
+
+    input{
+        padding: 2px;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    h3 {
+        margin-top: -15px;
+        background-color: #ffffff;
+    }
+
+    @media screen and (max-width:460px) {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-left: 10px;
+        }
+
+        .garis {
+            width: 90%;
+        }
+    }
+
+    /* Nama : Lalu Oji Darmaji */
+    /* NIM : SI20230022 */
+</style>
+
+<body>
+    <form class="container" action="">
+        <h2 style="margin: 10px;">Form Pemesanan Tiket Pesawat</h2>
+        <div class="garis">
+            <h3>Informasi Penumpang</h3>
+            <div class="row">
+                <p>Nama Lenkap: </p><input required type="text" placeholder="Masukan Nama Lengkap" />
+            </div>
+            <div class="row">
+                <p>Nomor Identitas (KTP/Paspor): </p><input required type="number" placeholder="Masukan Nomor Identitas" />
+            </div>
+            <div class="row">
+                <p>Jenis Kelamin: </p>
+                <select>
+                    <option value="laki-laki">Laki-Laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="row">
+                <p>Alamat Email:</p><input required type="email" placeholder="Masukan Email">
+            </div>
+            <div class="row">
+                <p>Nomor Telepon:</p><input required type="tel" placeholder="Masukan Nomor Telepon">
+            </div>
+        </div>
+
+        <div class="garis">
+            <h3>Informasi Penerbangan</h3>
+            <div class="row">
+                <p>Bandara Keberangkatan: </p>
+                <select>
+                    <option value="Soekarno-Hatta">Soekarno-Hatta</option>
+                    <option value="Juanda">Juanda</option>
+                    <option value="Minangkabau">Minangkabau</option>
+                    <option value="Kualanamu">Kualanamu</option>
+                    <option value="Hang_Nadim">Hang Nadim</option>
+                    <option value="Kulonproga">Kulonproga</option>
+                    <option value="Zainudin_Abdul_Madjid">Zainudin Abdul Madjid</option>
+                    <option value="Sultan_Iskandar_Muda">Sultan Iskandar Muda</option>
+                </select>
+            </div>
+            <div class="row">
+                <p>Bandara Tujuan: </p>
+                <select>
+                    <option value="Soekarno-Hatta">Soekarno-Hatta</option>
+                    <option value="Juanda">Juanda</option>
+                    <option value="Minangkabau">Minangkabau</option>
+                    <option value="Kualanamu">Kualanamu</option>
+                    <option value="Hang_Nadim">Hang Nadim</option>
+                    <option value="Kulonproga">Kulonproga</option>
+                    <option value="Zainudin_Abdul_Madjid">Zainudin Abdul Madjid</option>
+                    <option value="Sultan_Iskandar_Muda">Sultan Iskandar Muda</option>
+                </select>
+            </div>
+            <div class="row">
+                <p>Tanggal Keberangkatan: </p><input required type="date">
+            </div>
+            <div class="row">
+                <p>Tanggal Kepulangan (opsional):</p><input type="date">
+            </div>
+            <div class="row">
+                <p>Jumlah Penumpang:</p><input required type="number" style="width: 50px;">
+            </div>
+            <div class="row">
+                <p>Kelas Penerbangan:</p>
+                <select>
+                    <option value="Ekonomi">Ekonomi</option>
+                    <option value="Ekonomi_Premium">Ekonomi Premium</option>
+                    <option value="Bisnis">Bisnis</option>
+                    <option value="First_Class">First Class</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="garis">
+            <h3>Metode Pembayaran</h3>
+            <h4 style="margin-top: 10px;">Pilih Metode Pembayaran</h4>
+            <div class="row">
+                <input type="radio"/>
+                <p>Kartu Kredit</p>
+            </div>
+            <div class="row">
+                <input type="radio"/>
+                <p>Transfer Bank</p>
+            </div>
+            <div class="row">
+                <input type="radio"/>
+                <p>E-Wallet (GoPay,OVO,dll)</p>
+            </div>
+        </div>
+        <button style="margin: 20px;" type="submit">Pesan Tiket</button>
+    </form>
+</body>
+
+</html>
