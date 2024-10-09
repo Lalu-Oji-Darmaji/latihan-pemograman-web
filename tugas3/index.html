@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3 BOX</title>
+</head>
+<style type="text/css">
+    *,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+    }
+
+    .container {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        background-color: #101010;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ff0000;
+        box-shadow: 0px 0px 15px #ff0000;
+    }
+
+    .box {
+        background-color: #121010;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    button {
+        height: 30px;
+        width: 70px;
+        background-color: #000000;
+        border: 1px solid #ff0000;
+        color: #ff0000;
+        border-radius: 2px;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #ff0000;
+        border: 1px solid #ff7272;
+        scale: 110%;
+        color: #feeaea;
+        box-shadow: 0px 0px 3px #ff0000, 0px 0px 10px #ff0000;
+        transition: .5s ease-in-out;
+    }
+
+    img {
+        width: 130px;
+        height: 130px;
+        margin: 15px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        border: 1px solid #bcbcbc;
+    }
+
+    h3 {
+        font-family: Tahoma;
+        color: #ffffff70;
+        border-top: 1px solid #bcbcbc;
+        padding: 15px;
+    }
+
+    a {
+        font-family: Tahoma;
+        font-weight: bolder;
+        font-size: x-large;
+        color: #ffffffe0;
+        border-top: 1px solid #bcbcbc;
+        padding: 15px;
+    }
+
+    p {
+        position: relative;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: larger;
+        border-top: 1px solid #bcbcbc;
+        padding: 15px;
+        text-align: center;
+        color: #eddbdb;
+    }
+
+    @media screen and (max-width:500px) {
+        .container{
+            width: 90%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: fit-content;
+            padding: 5px;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        button{
+            margin-bottom: 0px;
+        }
+
+        h3{
+            font-size: small;
+            padding: 5px;
+        }
+
+        p{
+            padding: 5px;
+            margin-top: 5px;
+            font-size: small;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        a{
+            font-size: smaller;
+            padding: 5px;
+        }
+        
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" style="padding-right: 10px;">
+            <img src="box.png" />
+            <h3>CHEST</h3>
+            <p>PENYIMPANAN TERBATAS</p>
+            <a>FREE</a>
+            <button>Beli</button>
+        </div>
+        <div class="box"
+            style="border-left: 1px solid #ff1818; border-right: 1px solid #ff1818; padding-right: 10px; padding-left: 10px;">
+            <img src="gudang.png" />
+            <h3>WAREHOUSE</h3>
+            <p>PENYIMPANAN 1TB</p>
+            <a>$800</a>
+            <button>Beli</button>
+        </div>
+        <div class="box" style="padding-left: 10px;">
+            <img src="galaxy.png" />
+            <h3>GALAXY</h3>
+            <p>PENYIMPANAN 100TB</p>
+            <a>$1200</a>
+            <button>Beli</button>
+        </div>
+    </div>
+</body>
+
+</html>
