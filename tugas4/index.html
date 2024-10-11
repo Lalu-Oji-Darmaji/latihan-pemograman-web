@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style>
+    *,html{
+        padding: 0;
+        margin: 0;
+        font-family: monospace;
+    }
+    body{
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .garis{
+        border: 1px solid #000000;
+        border-radius: 10px;
+    }
+    .logo{
+        height: 30px;
+        width: 50px;
+        margin-inline-end: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content:start;
+        align-items: center;
+        text-align: center;
+        flex-flow: wrap row;
+    }
+
+    a{
+        margin: 5px;
+        text-decoration: none;
+    }
+
+    input{
+        margin-inline-start: auto;
+    }
+    .side_image{
+        width: 100%;
+        height:20vh ;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pembungkus{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box{
+        width: 23%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .image_product{
+        width: 100%;
+        height: 100px;
+    }
+
+    p{
+        margin: 10px;
+    }
+
+    h4{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pembungkus2{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap row;
+    }
+
+    .box2{
+        width: 24%;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .img_trend{
+        width: 50px;
+        height: 100%;
+        border-radius: 10px;
+        border: 1px solid #000000;
+    }
+
+    button{
+        border-radius: 5px;
+    }
+
+    @media screen and (max-width:460px) {
+        .box2{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo garis">logo</div>
+            <a href="">Home</a><a href="">About</a><a href="">Contack</a><a href="">Profil</a>
+            <input type="search" placeholder="search">
+            <button class="">search</button>
+        </nav>
+
+        <div class="side_image garis">side image</div>
+        <h4>product</h4>
+        <div class="pembungkus">
+            <div class="box">
+                <img class="image_product garis" src="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, numquam non, quis aut nobis natus porro tempore voluptate, doloremque placeat nihil iusto at recusandae quod nostrum quibusdam dolorum facilis quisquam.</p>
+                <button>detail</button>
+            </div>
+            <div class="box">
+                <img class="image_product garis" src="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit neque cumque dolore accusantium quisquam, eaque numquam mollitia ex velit facere, est at temporibus sequi dolorem tenetur aliquid odio alias architecto.</p>
+                <button>detail</button>
+            </div>
+            <div class="box">
+                <img class="image_product garis" src="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea repellendus nam? Molestias placeat enim ex ipsam alias! Placeat corrupti expedita soluta corporis eius excepturi dolorem officiis odio et officia.</p>
+                <button>detail</button>
+            </div>
+        </div>
+        <h4 style="margin-inline-end: auto;">trending Product</h4>
+        <div class="pembungkus2">
+            <div class="box2">
+                <img src="" alt="" class="img_trend">
+                <p>product name <br/> 90 produc</p>
+            </div>
+            <div class="box2">
+                <img src="" alt="" class="img_trend">
+                <p>product name <br/> 90 produc</p>
+            </div>
+            <div class="box2">
+                <img src="" alt="" class="img_trend">
+                <p>product name <br/> 90 produc</p>
+            </div>
+            <div class="box2">
+                <img src="" alt="" class="img_trend">
+                <p>product name <br/> 90 produc</p>
+            </div>
+            <div class="box2">
+                <img src="" alt="" class="img_trend">
+                <p>product name <br/> 90 produc</p>
+            </div>
+            <div class="box2">
+                <img src="" alt="" class="img_trend">
+                <p>product name <br/> 90 produc</p>
+            </div>
+            <div class="box2">
+                <img src="" alt="" class="img_trend">
+                <p>product name <br/> 90 produc</p>
+            </div>
+            <button style="width: 24%; height: uato; margin:5px;">More product</button>
+        </div>
+
+        <div class="side_image garis" style="height: 10vh;" >
+            <p>Copy right @Produk Lokal 2024</p>
+        </div>
+    </div>
+</body>
+</html>
