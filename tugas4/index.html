@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout</title>
 </head>
 <style>
-    *,html{
+    *,
+    html {
         padding: 0;
         margin: 0;
         font-family: monospace;
     }
-    body{
+
+    body {
         background-color: #ffffff;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    .container{
+
+    .container {
         width: 95%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    .garis{
+
+    .garis {
         border: 1px solid #000000;
         border-radius: 10px;
     }
-    .logo{
+
+    .logo {
         height: 30px;
         width: 50px;
         margin-inline-end: auto;
@@ -37,157 +43,197 @@
         align-items: center;
         justify-content: center;
     }
-    nav{
+
+    nav {
         margin-top: 10px;
         width: 100%;
         display: flex;
-        justify-content:start;
+        justify-content: start;
         align-items: center;
         text-align: center;
         flex-flow: wrap row;
     }
 
-    a{
+    a {
         margin: 5px;
         text-decoration: none;
     }
 
-    input{
+    input {
         margin-inline-start: auto;
     }
-    .side_image{
+
+    .side_image {
         width: 100%;
-        height:20vh ;
+        height: 20vh;
         margin-top: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-image: url('side.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    .pembungkus{
+    .pembungkus {
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
 
-    .box{
+    .box {
         width: 23%;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
-    .image_product{
+    .image_product {
         width: 100%;
         height: 100px;
     }
 
-    p{
+    p {
         margin: 10px;
     }
 
-    h4{
+    h4 {
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
-    .pembungkus2{
+    .pembungkus2 {
         display: flex;
         justify-content: space-between;
         flex-flow: wrap row;
     }
 
-    .box2{
+    .box2 {
         width: 24%;
         display: flex;
         justify-content: center;
         margin: 5px;
     }
 
-    .img_trend{
+    .img_trend {
         width: 50px;
         height: 100%;
         border-radius: 10px;
         border: 1px solid #000000;
     }
 
-    button{
+    button {
         border-radius: 5px;
     }
 
-    @media screen and (max-width:460px) {
-        .box2{
-            display:flex;
+    @media screen and (max-width:640px) {
+        .box2 {
+            display: flex;
             justify-content: center;
             flex-direction: column;
         }
-    }
 
+        .papan {
+            margin: 5px;
+            display: flex;
+            align-items:start;
+            height: 25vh;
+            overflow: scroll;
+        }
+
+        .box {
+            width: 30%;
+        }
+    }
 </style>
+
 <body>
     <div class="container">
         <nav>
-            <div class="logo garis">logo</div>
+            <img class="logo garis" src="logo.png" alt="logo">
             <a href="">Home</a><a href="">About</a><a href="">Contack</a><a href="">Profil</a>
             <input type="search" placeholder="search">
             <button class="">search</button>
         </nav>
 
-        <div class="side_image garis">side image</div>
+        <div class="side_image garis"></div>
         <h4>product</h4>
         <div class="pembungkus">
             <div class="box">
-                <img class="image_product garis" src="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, numquam non, quis aut nobis natus porro tempore voluptate, doloremque placeat nihil iusto at recusandae quod nostrum quibusdam dolorum facilis quisquam.</p>
+                <img class="image_product garis" src="rocky.png">
+                <div class="papan">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, numquam non, quis aut nobis natus
+                        porro
+                        tempore voluptate, doloremque placeat nihil iusto at recusandae quod nostrum quibusdam dolorum
+                        facilis
+                        quisquam.</p>
+                </div>
                 <button>detail</button>
             </div>
             <div class="box">
-                <img class="image_product garis" src="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit neque cumque dolore accusantium quisquam, eaque numquam mollitia ex velit facere, est at temporibus sequi dolorem tenetur aliquid odio alias architecto.</p>
+                <img class="image_product garis" src="resep.png">
+                <div class="papan">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit neque cumque dolore accusantium
+                        quisquam,
+                        eaque numquam mollitia ex velit facere, est at temporibus sequi dolorem tenetur aliquid odio
+                        alias
+                        architecto.</p>
+                </div>
                 <button>detail</button>
             </div>
             <div class="box">
-                <img class="image_product garis" src="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea repellendus nam? Molestias placeat enim ex ipsam alias! Placeat corrupti expedita soluta corporis eius excepturi dolorem officiis odio et officia.</p>
+                <img class="image_product garis" src="topi.png">
+                <div class="papan">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea repellendus nam? Molestias
+                        placeat
+                        enim
+                        ex ipsam alias! Placeat corrupti expedita soluta corporis eius excepturi dolorem officiis odio
+                        et
+                        officia.</p>
+                </div>
                 <button>detail</button>
             </div>
         </div>
         <h4 style="margin-inline-end: auto;">trending Product</h4>
         <div class="pembungkus2">
             <div class="box2">
-                <img src="" alt="" class="img_trend">
-                <p>product name <br/> 90 produc</p>
+                <img src="kerang.png" alt="" class="img_trend">
+                <p>product name <br /> 90 produc</p>
             </div>
             <div class="box2">
-                <img src="" alt="" class="img_trend">
-                <p>product name <br/> 90 produc</p>
+                <img src="sabuk.png" alt="" class="img_trend">
+                <p>product name <br /> 90 produc</p>
             </div>
             <div class="box2">
-                <img src="" alt="" class="img_trend">
-                <p>product name <br/> 90 produc</p>
+                <img src="krabypatty.png" alt="" class="img_trend">
+                <p>product name <br /> 90 produc</p>
             </div>
             <div class="box2">
-                <img src="" alt="" class="img_trend">
-                <p>product name <br/> 90 produc</p>
+                <img src="semprotan.png" alt="" class="img_trend">
+                <p>product name <br /> 90 produc</p>
             </div>
             <div class="box2">
-                <img src="" alt="" class="img_trend">
-                <p>product name <br/> 90 produc</p>
+                <img src="sendok.png" alt="" class="img_trend">
+                <p>product name <br /> 90 produc</p>
             </div>
             <div class="box2">
-                <img src="" alt="" class="img_trend">
-                <p>product name <br/> 90 produc</p>
+                <img src="klarinet.png" alt="" class="img_trend">
+                <p>product name <br /> 90 produc</p>
             </div>
             <div class="box2">
-                <img src="" alt="" class="img_trend">
-                <p>product name <br/> 90 produc</p>
+                <img src="cincin.png" alt="" class="img_trend">
+                <p>product name <br /> 90 produc</p>
             </div>
             <button style="width: 24%; height: uato; margin:5px;">More product</button>
         </div>
 
-        <div class="side_image garis" style="height: 10vh;" >
-            <p>Copy right @Produk Lokal 2024</p>
+        <div class="side_image garis" style="height: 10vh;">
+            <p
+                style="text-shadow: 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, -1px 1px 0px #ffffff, 1px -1px 0px #ffffff;">
+                Copy right @Produk Lokal 2024</p>
         </div>
     </div>
 </body>
+
 </html>

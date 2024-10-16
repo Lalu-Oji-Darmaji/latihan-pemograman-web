@@ -1,0 +1,69 @@
+*{
+    font-family: Arial, Verdana, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    font-family: "Courier New", monospace;
+    animation: animasi .5s infinite;
+    text-shadow: 0px 0px 2px #fe520e, 0px 0px 5px #fe520e, 0px 0px 8px #fe520e;
+}
+
+i{
+    color: green;
+}
+
+i{
+    color: red;
+}
+
+b{
+    color: pink;
+}
+
+p b{
+    color: rgb(89, 243, 12) !important;
+}
+
+p b{   
+    color: violet;
+    
+}
+
+p#intro{
+    font-size: 100%;
+}
+
+p{
+    font-size: 70%;
+    text-shadow: 0px 0px 2px #fe520e, 0px 0px 5px #fe520e, 0px 0px 8px #fe520e;
+}
+
+@keyframes animasi {
+    0%{
+        color: #ff0000;
+    }
+
+    20%{
+        color: #9f0d0d;
+    }
+
+    40%{
+        color: #ff0000;
+    }
+
+    60%{
+        color: #ff0000;
+    }
+
+    80%{
+        color: #750e0e;
+    }
+    
+    100%{
+        color: #160404;
+    }
+}

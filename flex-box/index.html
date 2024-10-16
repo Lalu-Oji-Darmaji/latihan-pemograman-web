@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+</head>
+<style>
+    *,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #000000;
+    }
+
+
+    .box {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: #ff0000;
+        font-size: 100px;
+        color: #ffffff;
+        border-radius: 0px 15px 0px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: animasi 1.5s infinite;
+    }
+
+    .pembungkus {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @keyframes animasi {
+
+        10% {
+            border-top: 1px solid #ffffff;
+        }
+
+        20% {
+
+            border-right: 1px solid #ffffff;
+        }
+
+        30% {
+
+            border-bottom: 1px solid #ffffff;
+
+        }
+
+        40% {
+
+            border-left: 1px solid #ffffff;
+
+        }
+
+        50% {
+
+            border-top: 1px solid #ffffff;
+
+        }
+
+        60% {
+
+            border-right: 1px solid #ffffff;
+
+        }
+
+        70% {
+
+            border-bottom: 1px solid #ffffff;
+
+        }
+
+        80% {
+
+            border-left: 1px solid #ffffff;
+
+        }
+
+        90% {
+
+            border-top: 1px solid #ffffff;
+
+        }
+
+        100% {
+
+            border-right: 1px solid #ffffff;
+
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="pembungkus">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+
+</html>
