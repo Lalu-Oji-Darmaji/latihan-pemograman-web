@@ -40,7 +40,7 @@
                         <td><p>Nama :</p></td><td><input type="text" name="nama_dosen" placeholder="Masukan Nama"></td>
                     </tr>
                     <tr>
-                        <td><p>Nim :</p></td><td><input type="text" name="nidn" placeholder="Masukan Nidn"></td>
+                        <td><p>Nidn :</p></td><td><input type="text" name="nidn" placeholder="Masukan Nidn"></td>
                     </tr>
                 </table>
             </div>

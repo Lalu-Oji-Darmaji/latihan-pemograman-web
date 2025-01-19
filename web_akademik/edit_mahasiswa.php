@@ -38,7 +38,7 @@ if(isset($_POST["submit"])){
 <link rel="stylesheet" href="style.css"/>
 <body>
     <div class="container_edit">
-        <h2>Edit Data</h2>
+        <h2>Edit Data Mahasiswa</h2>
         <h5><?php echo $notif; ?></h5>
         <form action="" method="post" enctype="multipart/form-data">
             <div class="box">

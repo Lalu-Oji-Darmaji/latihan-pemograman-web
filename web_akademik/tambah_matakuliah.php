@@ -42,7 +42,7 @@
                         <td><p>Nama :</p></td><td><input type="text" name="nama_matakuliah" placeholder="Nama Matakuliah"></td>
                     </tr>
                     <tr>
-                        <td><p>Nim :</p></td><td><input type="text" name="kode_matakuliah" placeholder="Kode Matakuliah"></td>
+                        <td><p>Kode Matakuliah :</p></td><td><input type="text" name="kode_matakuliah" placeholder="Kode Matakuliah"></td>
                     </tr>
                     <tr>
                         <td><p>Nim :</p></td><td><input type="number" name="sks" placeholder="Jumlah SKS"></td>

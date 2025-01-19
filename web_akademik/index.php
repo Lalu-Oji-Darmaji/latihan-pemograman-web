@@ -25,7 +25,7 @@
     if (count($perkuliahan) > 0):
         $no=1;
         ?>   
-        <h3>Perkuliahan</h3>
+        <h3>Data Perkuliahan</h3>
         <table border="1" cellpadding="10" cellspacing="0">
         <tr style="background-color:#0a0a0a; color: #ee8c0d;">
             <td>No</td>
